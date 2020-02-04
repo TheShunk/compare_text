@@ -1,9 +1,25 @@
 # compare_text
-compare two texts and determine their similarity between 0 and 1
+compare two texts and determine their similarity between 0 and 1 based on character match. No NLP present.
 
-usage script arg1 arg2
+value is determined by the total number of matches between the two texts and the total number of characters between the texts. 
 
-arg1 is text1 arg2 is text2
+example:
+
+    text1 = 'abc'
+    text2 = 'nmc'
+
+    only the 'c' matches between the two, but 33% of each text matches so we expect a value of .33
+
+-----------------------------------------
+
+usage: python compare_text arg1 arg2
+
+arg1 is path to text1 
+arg2 is path to text2
+
+assumption: texts are simple .txt files
+
+-----------------------------------------
 
 references
 
